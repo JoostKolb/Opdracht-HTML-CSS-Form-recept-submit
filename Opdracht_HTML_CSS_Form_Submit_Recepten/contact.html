@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- hier zet je de code in de head tags -->
+    <title> Opdracht | HTML CSS Form </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <!--Dit is de navigatie-->
+    <nav class="box-shadow">
+        <ul class="menu-desktop">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Over mij</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="box-shadow">
+        <ul class="menu-mob">
+            Insert hamburger menu hier
+        </ul>
+    </nav>
+
+    <!--Dit is de header-->
+    <header>
+        <div class="intro">
+            <h1>Joost Kolb</h1>
+            <p>Leerling Front-end Developer</p>
+        </div>
+    </header>
+
+    <!--Dit is de main-->
+    <main class="box-shadow">
+        <section>
+            <h2>Contactformulier</h2>
+            <form class="cleanform" name="contact" method="POST" data-netlify="true">
+                <!--
+                    naam
+                    email
+                    telefoonnummer (tel)
+                    leeftijd
+                    geboortedatum
+                    gender (radiobuttons)
+                    favoriete cuisine: frans, italiaans, spaans of arabisch (checkbox)
+                    favoriete kleur van short (colorpicker)
+                    biografie (text-area)
+                    upload je laatste recept (upload een file)
+                    url naar je recepten website (url)
+                    een button van het type "reset" om het formulier leeg te kunnen maken
+                    een button van het type "submit" om het formulier te kunnen verzenden
+                -->
+                <div class="col-1">
+                    <label>Contactgegevens:</label><br>
+                    <br>
+                    <input type="text" name="name" id="" placeholder="Naam"><br>
+                    <input type="email" name="email" id="" placeholder="Emailadres"><br>
+                    <input type="tel" name="phone" id="" placeholder="Telefoonnummer"><br>
+                    <input type="number" name="age" id="" placeholder="Leeftijd"><br>
+                    <input type="date" name="dateOfBirth" id="" placeholder="geboortedatum"><br>
+                    <br>
+                    <!-- Radio -->
+                    <label>Geslacht:</label><br>
+                    <input type="radio" name="gender" id="" value="Man">Man<br>
+                    <input type="radio" name="gender" id="" value="Vrouw">Vrouw<br>
+                    <br>
+                    <!-- Checkboxes -->
+                    <label>Favoriete Cuisine:<select name="favoriteCuisine[]" multiple><br>
+                            <br>
+                            <input type="checkbox" name="favoriteCuisine1" id="favoriteCuisine1" value="Frans"><label
+                                for="favoriteCuisine1">Frans</label><br>
+                            <input type="checkbox" name="favoriteCuisine2" id="favoriteCuisine2"
+                                value="Italiaans"><label for="favoriteCuisine1">Italiaans</label><br>
+                            <input type="checkbox" name="favoriteCuisine3" id="favoriteCuisine3" value="Spaans"><label
+                                for="favoriteCuisine1">Spaans</label><br>
+                            <input type="checkbox" name="favoriteCuisine4" id="favoriteCuisine4" value="Arabisch"><label
+                                for="favoriteCuisine1">Arabisch</label><br>
+                        </select>
+                    </label>
+                    <br>
+                    <label>Kleurkeuze:</label><br>
+                    <input type="color" name="color" id=""><br>
+                </div>
+
+                <div class="col-2">
+                    <label>Biografie:</label><br>
+                    <br>
+                    <textarea name="message" id="" rows="10" placeholder="Typ hier uw bericht"></textarea><br>
+
+                    <input type="file" name="upload" id=""><br>
+                    <input type="url" name="url" id="" placeholder="URL"><br>
+                    <input type="submit" value="versturen">
+                    <input type="reset" value="Reset">
+                </div>
+
+                <div class="clr"></div>
+            </form>
+
+        </section>
+    </main>
+
+    <!--Dit is de footer-->
+    <footer>
+        <h4>Informatie</h4>
+        <ul>
+            <li><a href="about.html">Over mij</a></li>
+            <li><a href="contact.html">Contactgegevens</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
